@@ -210,4 +210,10 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 ```
 Your thoughts...
+As grad students, a database that we often encounter is the publication record. Systems like PubMed, Scopus, and Google Scholar inherently encode an assumption about what knowledge and contribution is defined as; a peer-reviewed article, typically in English, in an indexed journal, with an ordered list of authors. Everything that doesn’t fit that schema is either cast aside or invisible. Things like writing analysis code, building a processing pipeline, curating a dataset, mentoring a student, posting a preprint, none of these are recorded in the table. Author order itself is also a small schema, a hierarchy encoded as a position in a list, and it doesn’t reflect how collaborative work actually happens. 
+
+The consequence is similar in shape to what Qadri describes. The model of a family, a person attached to a father, the male head of household, enforced on everyone, ignoring the consequences of those who don't fit it. The designers themselves weren’t trying to exclude anyone, but chose a structure that made the data tractable, and consequently the structure became the rule. A database schema looks like a description of the world, but in reality, it is really a decision about what an institution will recognize.
+
+Metrics like the h-index are derived columns computed from this schema, and they make or break hiring and funding decisions. The database’s values about what counts as a contribution directly impact our careers, and researchers learn to optimize their work toward what this schema can see rather than what the actual science needs.
+
 ```

@@ -58,6 +58,9 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 ```
 Your answer...
+
+The overwrite version is Type 1, one row per customer, and when they move you update the address columns in place, old address is lost. The retain version is Type 2, multiple rows per customer, each with start_date, end_date, and is_current columns. When they move you close the old row and insert a new one, so the full address history is kept.
+
 ```
 
 ***
@@ -193,4 +196,10 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 ```
 Your thoughts...
+The first ethical issue I think is important here is labour and credit. The researchers and algorithms get the fame and glory, while the workers who helped make the data get very little. ImageNet was labelled by tens of thousands of  workers paid only cents per image, and their names don't appear anywhere. Boykis specifically points out George Miller’s wife who helped build WordNet and was left out of his obituary. As grad students, this is a familiar pattern for us too. Many labs I know hire undergrads and research assistants who help do a large chunk of the hands-on work for a given project usually for free (volunteering) or course credits, and rarely get authorship or acknowledgements. 
+
+Another issue is bias. Somebody had to decide which categories exist and which images belong in them, and those decisions fundamentally carry the views and values of whoever made them. Interestingly enough, ImageNet’s own review found that more than half of its categories for people were offensive. This was no accidental but rather the judgements of the underpaid workers applying a system nobody had really questioned. Once a dataset like this becomes the standard it leads to every model trained on it to inherit those judgements.
+
+The same problems apply to today’s large language models. The people that train them and 'clean' their data are done by the same kind of invisible, under-paid workforce, now at a much larger scale. I think that data 'cleaners' in particular are exposed to potentially harmful content for a very little cut of the money so that the final product looks clean. The lesson here I think is that the people and choices behind a dataset are inherently part of the system, and we should know who made them before trusting the results.
+
 ```
